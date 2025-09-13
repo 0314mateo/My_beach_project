@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>¡Nos vamos a la playa!</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: linear-gradient(to bottom, #87CEFA, #fefbd8);
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      margin-top: 20px;
+      color: #004080;
+    }
+
+    .gallery {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin: 20px auto;
+    }
+
+    .gallery img {
+      width: 250px;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.1);
+    }
+
+    video {
+      width: 70%;
+      border-radius: 15px;
+      margin: 20px 0;
+      box-shadow: 0px 4px 12px rgba(0,0,0,0.4);
+    }
+
+    .btn {
+      display: inline-block;
+      margin: 20px;
+      padding: 15px 30px;
+      font-size: 18px;
+      color: white;
+      background-color: #008CBA;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: background 0.3s;
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      background-color: #005f73;
+    }
+  </style>
+</head>
+<body>
+  <h1>🌴 ¡Sorpresa! 🌊</h1>
+  <h2>¡Nos vamos de paseo a la playa! 🏖️</h2>
+
+  <!-- Galería de imágenes -->
+  <div class="gallery">
+    <img src="images/playa1.jpg" alt="Playa 1">
+    <img src="images/playa2.jpg" alt="Playa 2">
+    <img src="images/playa3.jpg" alt="Playa 3">
+  </div>
+
+  <!-- Video local -->
+  <video controls>
+    <source src="videos/playa.mp4" type="video/mp4">
+    Tu navegador no soporta el video.
+  </video>
+
+  <!-- Botón -->
+  <br>
+  <a href="https://maps.google.com" target="_blank" class="btn">¡Vamos a la playa! 🌞</a>
+</body>
+</html>
